@@ -20,4 +20,11 @@ class DashboardController extends Controller
         ]);
     
     }
+
+    public function map(){
+        $latitude = 30.704649; // Example latitude
+    $longitude = 76.717873; // Example longitude
+
+    return view('Dashboard.map', compact('latitude', 'longitude'));
+    }
 }

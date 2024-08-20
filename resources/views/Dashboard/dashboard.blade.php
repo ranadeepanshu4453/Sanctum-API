@@ -1,12 +1,8 @@
 <div>
     <h1>
         Welcome To Dashboard
-        <h3>Add New Article here</h3>
-        <form action="/addArticle" method="post">
-            @csrf
-            <input type="text" name="title" placeholder="Enter Title"><br><br>
-            <input type="text" name="description" placeholder="Enter Description"><br><br>
-            <button>Submit</button>
-        </form>
+        
+        <button><a href="{{route('graph')}}">Graph</a></button>
+        <button><a href="{{route('map')}}">Map</a></button>
     </h1>
 </div>

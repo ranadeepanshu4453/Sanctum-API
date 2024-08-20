@@ -21,6 +21,7 @@ Route::get('Logout',[AuthController::class,'logout']);
 
 //graph 
 
-Route::get('graph',[DashboardController::class,'index']);
+Route::get('graph',[DashboardController::class,'index'])->name('graph');
+Route::get('map',[DashboardController::class,'map'])->name('map');
 
 
